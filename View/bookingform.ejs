@@ -1,0 +1,23 @@
+<%- include("header"); -%>
+
+<form class="" action="/bookingform" method="post">
+    <div>
+        <label>Name</label>
+        <input class="form-control" type="text" name="postTitle" required>
+        <label>DOB</label>
+        <input class="form-control" type="date" name="date" max="2023-08-10" required>
+        <label>Mobile</label>
+        <input class="form-control" type="text" name="number" required>
+        <label>Email</label>
+        <input class="form-control" type="text" name="Email">
+        <label>Date for Appointment</label>
+        <input class="form-control" type="date" name="appointmentdate" required min="2023-08-10">
+        <label>Reason of Visit</label>
+        <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+    </div>
+    <a href="/doctor" class="btn btn-primary" type="submit" name="button">BOOK APPOINTMENT</a>
+   
+
+</form>
+    
+<%- include("footer"); -%>
